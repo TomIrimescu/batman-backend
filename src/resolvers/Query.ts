@@ -1,3 +1,3 @@
 export const Query = {
-  hello: () => "World!"
+  hello: () => "Batman!"
 };
