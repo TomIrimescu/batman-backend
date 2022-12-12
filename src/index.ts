@@ -14,6 +14,9 @@ export interface Context {
 }
 
 const server = new ApolloServer({
+  cors: {
+    origin: "*",
+  },
   typeDefs,
   resolvers: {
     Query,
