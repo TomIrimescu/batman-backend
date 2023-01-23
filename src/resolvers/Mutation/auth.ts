@@ -138,9 +138,15 @@ export const authResolvers = {
 
     return {
       userErrors: [],
-      token: JWT.sign({ userId: user.id }, JWT_SIGNATURE, {
-        expiresIn: 3600000,
-      }),
+      token: JWT.sign(
+        {
+          userId: user.id,
+        },
+        JWT_SIGNATURE,
+        {
+          expiresIn: 3600000,
+        }
+      ),
     };
   },
 };
